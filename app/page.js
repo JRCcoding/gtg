@@ -39,8 +39,8 @@ const Home = () => {
           backgroundPosition: 'left center',
         }}
       >
-        <Navigation />
-        <HomeScreen />
+        <Navigation isMobile={isMobile} />
+        <HomeScreen isMobile={isMobile} />
       </div>
     </AuthProvider>
   )

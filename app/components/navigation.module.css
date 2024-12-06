@@ -19,6 +19,34 @@
     cursor: pointer;
   }
 
+  .hamburgerIcon {
+    font-size: 40px;
+    margin: 15%;
+  }
+
+  .mobileMenu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,rgba(255, 255, 255, .1), rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, .1));
+    height: 50px;
+    justify-content: center;
+    margin-top: -5%;
+  }
+
+  .mobileMenu2 button {
+    color: #4CAF50; /* Green */
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    margin: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Anton SC';
+    transition: 1s all;
+  }
+
     .modalContainer {
       /* ... other styles ... */
       position: absolute;
