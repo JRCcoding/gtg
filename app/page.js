@@ -5,6 +5,7 @@ import HomeScreen from './screens/HomeScreen'
 import Navigation from './components/Navigation'
 import bg from './assets/gtgbg.png'
 import mbg from './assets/gtgbgmobile.png'
+import { AuthProvider } from './components/UserAuth'
 
 const Home = () => {
   const useIsMobile = () => {
@@ -26,20 +27,22 @@ const Home = () => {
   const isMobile = useIsMobile()
 
   return (
-    <div
-      style={{
-        backgroundImage: isMobile ? `url(${mbg.src})` : `url(${bg.src})`,
-        height: '100vh',
-        width: '100vw',
-        backgroundHeight: '100vh',
-        backgroundWidth: '100vw',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'left center',
-      }}
-    >
-      <Navigation />
-      <HomeScreen />
-    </div>
+    <AuthProvider>
+      <div
+        style={{
+          backgroundImage: isMobile ? `url(${mbg.src})` : `url(${bg.src})`,
+          height: '100vh',
+          width: '100vw',
+          backgroundHeight: '100vh',
+          backgroundWidth: '100vw',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'left center',
+        }}
+      >
+        <Navigation />
+        <HomeScreen />
+      </div>
+    </AuthProvider>
   )
 }
 

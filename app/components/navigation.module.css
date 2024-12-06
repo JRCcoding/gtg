@@ -9,7 +9,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Anton SC';
     transition: 1s all;
   }
@@ -18,3 +18,20 @@
     color: #306b32;
     cursor: pointer;
   }
+
+    .modalContainer {
+      /* ... other styles ... */
+      position: absolute;
+    width: 100%;
+    top: 100;
+      opacity: 0;
+      visibility: hidden; /* Hide the element initially */
+      transition: opacity 1s ease-in-out, visibility 0s 1s; 
+      /* Add visibility to the transition with a delay */
+    }
+    
+    .modalContainer:not([hidden]) {
+      opacity: 1;
+      visibility: visible; /* Make it visible when not hidden */
+      transition: opacity 1s ease-in-out; /* Remove the visibility transition delay */
+    }
