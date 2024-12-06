@@ -1,0 +1,46 @@
+
+
+.header {
+    font-family: 'Bebas Neue';
+    font-size: 100px;
+    padding: 12%;
+    padding-bottom: 3%;
+    color: #ffffff;
+    text-shadow: 0px 0px 40px green;
+    -webkit-text-stroke: .1px hsl(121, 40%, 39%); /* For WebKit browsers */
+}
+
+.subheader {
+    font-family: 'Kanit';
+    font-size: 60px;
+    padding-top: 3%;
+    padding-left: 17.5%;
+    color: hsl(121, 40%, 39%);
+    text-shadow: 0px 0px 40px green;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta {
+    background: hsl(121, 40%, 39%);
+    border: 1px solid hsl(121, 40%, 39%);
+    border-radius: 15px;
+    padding: 8px;
+    font-family: 'Bebas Neue';
+    color: white;
+    font-size: 34px;
+    letter-spacing: 2px;
+    width: 400px;
+    margin: 5% auto;
+    box-shadow: 0px 0px 35px hsl(121, 40%, 39%);
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.cta:hover {
+    scale: 1.25
+}
