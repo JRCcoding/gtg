@@ -66,21 +66,23 @@ const Navigation = ({ isMobile }) => {
           hidden={!showMobileMenu}
         >
           <div className={styles.mobileMenu2}>
-            <button className={styles.mobileMenuButton}>shop</button>
-            <button className={styles.mobileMenuButton}>about</button>
-            <button className={styles.mobileMenuButton}>plant care</button>
-            {user ? (
-              <button
-                className={styles.mobileMenuButton}
-                onClick={handleSignOut}
-              >
-                logout
-              </button>
-            ) : (
-              <button className={styles.mobileMenuButton} onClick={authPopup}>
-                login
-              </button>
-            )}
+            <div className='animate__animated animate__fadeInLeft'>
+              <button className={styles.mobileMenuButton}>shop</button>
+              <button className={styles.mobileMenuButton}>about</button>
+              <button className={styles.mobileMenuButton}>plant care</button>
+              {user ? (
+                <button
+                  className={styles.mobileMenuButton}
+                  onClick={handleSignOut}
+                >
+                  logout
+                </button>
+              ) : (
+                <button className={styles.mobileMenuButton} onClick={authPopup}>
+                  login
+                </button>
+              )}
+            </div>
           </div>
         </div>
       )}

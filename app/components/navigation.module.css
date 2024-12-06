@@ -32,6 +32,8 @@
     height: 50px;
     justify-content: center;
     margin-top: -5%;
+    position: absolute;
+    width: 100%;
   }
 
   .mobileMenu2 button {
@@ -42,7 +44,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Anton SC';
     transition: 1s all;
   }
